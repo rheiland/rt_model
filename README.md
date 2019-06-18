@@ -131,5 +131,3 @@ Users should also consult the release notes for 1.5.0.
 + create a small library of angiogenesis and vascularization codes as an optional standard module in ./modules (but not as a core component)
 
 + improved plotting options in SVG 
-
-* * * # rt_model
