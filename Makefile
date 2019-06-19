@@ -5,7 +5,6 @@ CC := g++
 # CC := g++-9 # typical homebrew compiler name 
 
 # Check for environment definitions of compiler 
-# e.g., on CC = g++-7 on OSX
 ifdef PHYSICELL_CPP 
 	CC := $(PHYSICELL_CPP)
 endif
