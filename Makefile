@@ -2,17 +2,13 @@ VERSION := $(shell grep . VERSION.txt | cut -f1 -d:)
 PROGRAM_NAME := radiot
 
 CC := g++
-# CC := g++-mp-7 # typical macports compiler name
-# CC := g++-7 # typical homebrew compiler name 
+# CC := g++-9 # typical homebrew compiler name 
 
 # Check for environment definitions of compiler 
 # e.g., on CC = g++-7 on OSX
 ifdef PHYSICELL_CPP 
 	CC := $(PHYSICELL_CPP)
 endif
-
-# hard-code the compiler for now
-CC := /usr/local/bin/g++-9
 
 ARCH := native # best auto-tuning
 # ARCH := core2 # a reasonably safe default for most CPUs since 2007
